@@ -12,9 +12,30 @@ $color-primary-light: #FDDCC4;
 /*$start-screen-gradient-background
 $footer-gradient-background: #513D2F @ 0% #1A1A1C @ 100%;*/
 
-:root{
-    font-size: 16px;
+@mixin h2{
+    font: {
+        family: Georgia;
+        size: 20px;
+        weight:bold;
+    }   
 }
+@mixin large-text{
+    font: {
+        family: Arial;
+        size: 20px;
+        weight:bold;
+    }   
+}
+
+/**/
+:root{
+    font-size: 18px;
+}
+/**/
+.icon{
+    padding:  0 12rem;
+}
+/**/
 *{
     padding: 0;
     margin: 0;
@@ -23,99 +44,127 @@ $footer-gradient-background: #513D2F @ 0% #1A1A1C @ 100%;*/
 
 .header{
     width: 100vw;
-    position: fixed;
-    top:0;
+    max-width: 100%;
+    /*position: fixed;*/
+    top: 6rem;
+    position: absolute;
 }
 
 .wrapper{
     display: flex;
     margin: 0 auto;
-    max-width: 75rem; /*1200 / 16 = 75*/
+    max-width: 120rem; 
+    flex: 1;
     justify-content: space-between;
 }
 
+/*1200 / 16 = 75*/
+.hero__wrapper{
+    display: flex;
+    margin: 0 auto;
+    max-width: 75rem; /*1200 / 16 = 75*/
+    justify-content: space-between;
+}
+/**/
+.menu{
+    display: flex;
+    width: 44.3rem;
+}
+/**/
 .logo{
     display: flex;
     flex-direction: column;/*subtitle down*/
 }
-
+/**/
 .logo__title{
     font-family: Georgia;
     font-size: 2rem;
-    line-height: 110%;
     align-items: center;
-    letter-spacing: 6%;
-    color:$color-primary;
+    letter-spacing: 0.192rem;
+    color:$color-primary; 
 }
-
+/**/
 .logo__subtitle{
+    margin-top: 1rem;
     color: $color-light-xl;
     font-family: Arial;
-    font-size: 0.8rem;
-    line-height: 110%;
-    letter-spacing: 10%;   
+    font-size: 3.2rem;
+    text-align: center; 
+    letter-spacing: 0.192rem;  
+    font-weight: 400;
 }
-
+/**/
 .menu{
     display: flex;
-    flex-direction: column;    
 }
-
+/**/
 .list{
     display: flex;
     list-style-type: none;
     width: 100%;
     justify-content: space-between;
 }
-
+/**/
 .list__item{
     display: flex;
     align-items: center;
 }
-
+/**/
 .list__link{
     color: $color-light-s;
     font-family: Arial;
-    font-size: 0.93rem;
-    line-height: 160%;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
-
+/**/
 .list__link_active{
-    border-bottom: solid 3px $color-primary;
+    border-bottom: solid 0.3rem $color-primary;
 }
-
+/**/
 .list__link_disabled{
     color: $color-dark-s;
 }
-
+/**/
+.main{
+    display: flex;
+    flex-direction: column;
+}
+/**/
 .hero{
     display: flex;
-    background: url(/assets/images/start-screen-gradient-background.png), 
+    padding-top: 18rem;
+    background: url(./../../assets/images/start-screen-gradient-background.png), 
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
+/**/
+.hero__content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/**/
 .content-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 84px;
 }
+/**/
 .content-section__title{
     font-family: Georgia;
-    font-size: 2.75rem;
+    font-size: 4.4rem;
     line-height: 130%;
     color: $color-light-xl;
     max-width: 19.375rem;
     font-size: 400px;
 }
-
+/**/
 .content-section__subtitle{
     margin-top: 2.625rem;   
     font-family: Arial;
-    font-size: 15px;
     line-height: 160%;
     color: $color-dark-s;
 }
-
+/**/
 .content-section__subtitle{
     padding: 15px 0px 0px 45px;
     margin-top: 42px;
@@ -123,4 +172,7 @@ $footer-gradient-background: #513D2F @ 0% #1A1A1C @ 100%;*/
     background: $color-primary;
     border-radius: 100px;
     border: none;
+}
+.content-section__button{
+
 }
