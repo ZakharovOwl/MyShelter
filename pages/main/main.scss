@@ -434,3 +434,111 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     }
 }
 
+.help{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 8rem;
+        margin-left: -4px;
+        margin-bottom: 8.4vh;
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @include h3()
+    }
+
+    &-cards{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 6rem;
+    }
+
+    &__line-one{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 7vw;
+    }
+
+    &__line-two{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 5vh;
+        margin: auto 13vw;
+    }
+
+    &-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-card__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    &-card__title{
+        @include h4();
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .menu-wrapper{
+        display: flex;
+        margin: auto 5vw;
+        max-width: 120rem; 
+        flex: 0;
+        justify-content: space-between;
+    }
+
+    .about{
+        display: flex;
+    
+        &__wrapper{
+            display: flex;
+            margin: auto 0;
+            justify-content: center; 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title{
+            align-items: center;
+        }
+
+        &__description{
+            align-items: center;
+        }
+    }
+    .pets{
+        &-cards{
+            margin: auto 0;
+            justify-content: center; 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__content{
+            align-items: center;
+        }
+    }
+  }
