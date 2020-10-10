@@ -297,7 +297,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 
     &__wrapper{
         display: flex; 
-        width: 100%; 
+        width: 100%;
+        margin-bottom: 86px;
     }
 
     &__image-wrapper{
@@ -346,8 +347,9 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 170px;
-        margin-left: 2px;
+        margin-top: 81px;
+        margin-left: -4px;
+        margin-bottom: 97px;
     }
 
     &__title{
@@ -431,3 +433,4 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         top: 19rem;
     }
 }
+

@@ -213,6 +213,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-bottom: 86px;
 }
 
 .about__image-wrapper {
@@ -294,8 +295,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 170px;
-  margin-left: 2px;
+  margin-top: 81px;
+  margin-left: -4px;
+  margin-bottom: 97px;
 }
 
 .pets__title {
