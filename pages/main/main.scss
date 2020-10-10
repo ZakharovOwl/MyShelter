@@ -246,7 +246,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     padding-top: 18rem;
     background: $start-screen-gradient-background;
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
 
     &__content{
         display: flex;
@@ -589,6 +589,63 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         margin-left: 5px;
         width: 70%;
         max-width: 380px;
+    }
+}
+
+.footer{
+    display: flex;
+    background: url(/assets/images/footer/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
+    &__wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &-questions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-questions__email{
+        display: flex;
+    }
+
+    &-questions__phone{
+        display: flex;
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        @include h3();
+        color: $color-light-xl;
+    }
+
+    &-address{
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-address__city{
+        display: flex;
+    }
+
+    &-address__street{
+        display: flex;
+    }
+
+    &__text{
+        @include h4();
+        color: $color-primary;
+    }
+    &-container{
+        display: flex;
     }
 }
 
