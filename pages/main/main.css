@@ -645,6 +645,133 @@
   letter-spacing: 0.06em;
 }
 
+.donation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F6F6F6;
+}
+
+.donation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 7vh;
+  margin-left: 11vw;
+  margin-bottom: 10.8vh;
+}
+
+.donation-image-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-top: 13px;
+  margin-left: -4px;
+  max-height: 261px;
+}
+
+.donation-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.donation-content__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5px;
+  margin-top: 3px;
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+}
+
+.donation-content__bank {
+  color: #545454;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.donation-content__bank-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F1CDB3;
+  padding: 10px 0px 0px 15px;
+  width: 349px;
+  height: 43px;
+  border-radius: 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.donation-content__bank-account h4 {
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 110%;
+  letter-spacing: 0.09rem;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 12px;
+  -webkit-margin-after: auto;
+          margin-block-end: auto;
+}
+
+.donation-content__bank-account img {
+  width: 30px;
+  height: 23px;
+  -webkit-margin-after: auto;
+          margin-block-end: auto;
+}
+
+.donation-content__comment {
+  color: #B2B2B2;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 21px;
+  margin-left: 5px;
+  width: 70%;
+  max-width: 380px;
+}
+
 @media screen and (max-width: 1250px) {
   .menu-wrapper {
     display: -webkit-box;
@@ -707,6 +834,40 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .donation__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto 0;
+    margin-top: 7vh;
+    margin-bottom: 10.8vh;
+  }
+  .donation-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .donation__image {
+    width: 50vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

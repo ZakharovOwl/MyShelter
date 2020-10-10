@@ -501,6 +501,97 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     }
 }
 
+.donation{
+    display: flex;
+    background-color: $color-light-l;
+
+    &__wrapper{
+        display: flex;
+        width: 100%;
+        margin-top: 7vh;
+        margin-left: 11vw;
+        margin-bottom: 10.8vh;
+    }
+
+    &-image-block{
+        display: flex;
+        width: 50%;
+        margin-top: 13px;
+        margin-left: -4px;
+        max-height: 261px;
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    &-content__title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        margin-top: 3px;
+        @include h3();
+    }
+
+    &-content__bank{
+        color: $color-dark-l;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    &-content__bank-account{
+        display: flex;
+        background-color: $color-primary;
+        padding: 10px 0px 0px 15px;
+        width: 349px;
+        height: 43px;
+        border-radius: 9px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    &-content__bank-account h4{
+        @include h4();
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-right: 12px;
+        margin-block-end: auto;
+    }
+
+    &-content__bank-account img{
+        width: 30px;
+        height: 23px;
+        margin-block-end: auto;
+    }
+
+    &-content__comment{
+        color: $color-dark-m;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 21px;
+        margin-left: 5px;
+        width: 70%;
+        max-width: 380px;
+    }
+}
+
 @media screen and (max-width: 1250px) {
     .menu-wrapper{
         display: flex;
@@ -541,4 +632,29 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             align-items: center;
         }
     }
-  }
+
+    .donation{
+    
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto 0;
+            margin-top: 7vh;
+            margin-bottom: 10.8vh;
+        }
+
+        &-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        &__image{
+            width: 50vw;
+        }
+    
+    }
+}
