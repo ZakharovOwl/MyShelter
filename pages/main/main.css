@@ -295,8 +295,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 81px;
-  margin-left: -4px;
+  /*margin-top: 81px;
+        margin-left: -4px;*/
+  margin-top: 84px;
+  margin-left: 0px;
   margin-bottom: 97px;
 }
 
@@ -600,8 +602,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 5vh;
-  margin: auto 13vw;
+  /*padding-top: 5vh;
+        margin: auto 13vw;*/
+  padding-top: 5.9rem;
+  margin: auto 17rem;
 }
 
 .help-card {
@@ -667,9 +671,12 @@
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  margin-top: 13px;
-  margin-left: -4px;
+  /*margin-top: 13px;
+        margin-left: -4px;*/
   max-height: 261px;
+  margin-top: 15px;
+  /*margin-left: -16px;*/
+  margin-left: 0px;
 }
 
 .donation-content {
@@ -681,6 +688,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+  margin-left: 1rem;
 }
 
 .donation-content__title {
@@ -747,7 +755,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 12px;
+  /*margin-right: 12px;*/
+  margin-right: 15px;
   -webkit-margin-after: auto;
           margin-block-end: auto;
 }
@@ -913,102 +922,72 @@
   display: flex;
 }
 
+/*
 @media screen and (max-width: 1200px) {
-  .menu-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto 5vw;
-    max-width: 120rem;
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .about__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+    .menu-wrapper{
+        display: flex;
+        margin: auto 5vw;
+        max-width: 120rem; 
+        flex: 0;
+        justify-content: space-between;
+    }
+
+    .about{
+        display: flex;
+    
+        &__wrapper{
+            display: flex;
+            margin: auto 0;
+            justify-content: center; 
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
             align-items: center;
-  }
-  .about__title {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+        }
+
+        &__title{
             align-items: center;
-  }
-  .about__description {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+        }
+
+        &__description{
             align-items: center;
-  }
-  .pets-cards {
-    margin: auto 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+        }
+    }
+    .pets{
+        &-cards{
+            margin: auto 0;
+            justify-content: center; 
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
             align-items: center;
-  }
-  .pets__content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+        }
+
+        &__content{
             align-items: center;
-  }
-  .donation__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+        }
+    }
+
+    .donation{
+    
+        &__wrapper{
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
             align-items: center;
-    margin: auto 0;
-    margin-top: 7vh;
-    margin-bottom: 10.8vh;
-  }
-  .donation-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+            margin: auto 0;
+            margin-top: 7vh;
+            margin-bottom: 10.8vh;
+        }
+
+        &-content{
+            display: flex;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-  }
-  .donation__image {
-    width: 50vw;
-  }
+            width: 100%;
+        }
+
+        &__image{
+            width: 50vw;
+        }
+    
+    }
 }
+*/
 /*# sourceMappingURL=main.css.map */
