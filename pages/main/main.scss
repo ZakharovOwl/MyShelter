@@ -1005,6 +1005,14 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     }
 
     .footer{
-        display: none;
+        background: url(/assets/images/footer/footer-gradient-background768.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
+        &__wrapper{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
