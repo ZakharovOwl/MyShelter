@@ -246,7 +246,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     padding-top: 18rem;
     background: $start-screen-gradient-background;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100vw;
+    background-size: 100vh;
 
     &__content{
         display: flex;
@@ -458,6 +459,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         @include h3()
     }
 
+
     &-cards{
         display: flex;
         flex-direction: column;
@@ -501,6 +503,10 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         font-size: 20px;
         line-height: 115%;
         letter-spacing: 0.06em;
+    }
+
+    &-cards_grid{
+        display: none;
     }
 }
 
@@ -603,6 +609,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 .footer{
     display: flex;
     background: url(/assets/images/footer/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background-repeat: no-repeat;
+    background-size: 100vw;
 
     &__wrapper{
         display: flex;
@@ -923,7 +931,56 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 }
 
     .help{
-        display: none;
+        display: flex;
+
+        &__wrapper{
+            margin-left: 0px;
+            margin: 0 41px;
+            margin-top: 8rem;
+        }
+
+        &__title{
+            margin-left: 1px;
+        }
+        
+        &-cards_flex{
+            display: none;
+        }
+
+        &-cards_grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 162px);
+            align-items: start;
+            justify-items: center;
+            grid-gap: 7px;
+        }
+
+        &-card__collars{
+            margin-bottom: 7px;
+        }
+
+        &-card__vitamins{
+            margin-bottom: 5px;
+        }
+/*
+        &-card{
+            display: grid;
+        }
+    
+        &-card__content{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+        }
+    */
+        &-card__title{
+            @include h4();
+            font-size: 20px;
+            line-height: 115%;
+            letter-spacing: 0.06em;
+        }
     }
 
     .donation{
