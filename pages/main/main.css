@@ -295,8 +295,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 81px;
-  margin-left: -4px;
+  /*margin-top: 81px;
+        margin-left: -4px;*/
+  margin-top: 84px;
+  margin-left: 0px;
   margin-bottom: 97px;
 }
 
@@ -600,8 +602,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 5vh;
-  margin: auto 13vw;
+  /*padding-top: 5vh;
+        margin: auto 13vw;*/
+  padding-top: 5.9rem;
+  margin: auto 17rem;
 }
 
 .help-card {
@@ -667,9 +671,12 @@
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  margin-top: 13px;
-  margin-left: -4px;
+  /*margin-top: 13px;
+        margin-left: -4px;*/
   max-height: 261px;
+  margin-top: 15px;
+  /*margin-left: -16px;*/
+  margin-left: 0px;
 }
 
 .donation-content {
@@ -681,6 +688,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+  margin-left: 1rem;
 }
 
 .donation-content__title {
@@ -747,7 +755,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 12px;
+  /*margin-right: 12px;*/
+  margin-right: 15px;
   -webkit-margin-after: auto;
           margin-block-end: auto;
 }
@@ -913,92 +922,192 @@
   display: flex;
 }
 
+/*
 @media screen and (max-width: 1200px) {
-  .menu-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto 5vw;
-    max-width: 120rem;
-    -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
+    .menu-wrapper{
+        display: flex;
+        margin: auto 5vw;
+        max-width: 120rem; 
+        flex: 0;
+        justify-content: space-between;
+    }
+
+    .about{
+        display: flex;
+    
+        &__wrapper{
+            display: flex;
+            margin: auto 0;
+            justify-content: center; 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title{
+            align-items: center;
+        }
+
+        &__description{
+            align-items: center;
+        }
+    }
+    .pets{
+        &-cards{
+            margin: auto 0;
+            justify-content: center; 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__content{
+            align-items: center;
+        }
+    }
+
+    .donation{
+    
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto 0;
+            margin-top: 7vh;
+            margin-bottom: 10.8vh;
+        }
+
+        &-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        &__image{
+            width: 50vw;
+        }
+    
+    }
+}
+*/
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 768px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .about {
+  .menu-wrapper {
+    /*margin: auto 30px;*/
+    margin: auto 4%;
+  }
+  .header {
+    width: 100vw;
+    max-width: 100%;
+    /*position: fixed;*/
+    top: 3.1rem;
+    position: absolute;
+  }
+  .logo__title {
+    color: #F1CDB3;
+    font-family: Georgia;
+    font-style: normal;
+    font-size: 3.2rem;
+    font-weight: normal;
+    line-height: 110%;
+    letter-spacing: 0.192rem;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    font-family: Georgia;
+  }
+  .logo__subtitle {
+    margin-top: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 110%;
+    letter-spacing: 0.13rem;
+  }
+  .hero {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 18rem;
+    background: url(/assets/images/start-screen-gradient-background768.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -29px;
+    margin-left: 9px;
+  }
+  .hero__image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero__image {
+    max-width: 569px;
+    max-height: 593px;
+    margin-left: 132px;
+    margin-top: 20px;
+  }
+  .content-section__button {
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: -11px;
+  }
+  .content-section__button p {
+    width: 117px;
+    margin-top: 2px;
+  }
+  .content-section__button-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: auto 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about__title {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about__description {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .pets-cards {
-    margin: auto 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .pets__content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .donation__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto 0;
-    margin-top: 7vh;
-    margin-bottom: 10.8vh;
-  }
-  .donation-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1006,9 +1115,44 @@
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    margin-bottom: 86px;
   }
-  .donation__image {
-    width: 50vw;
+  .about__content {
+    margin-top: 80px;
+    margin-right: 47px;
+  }
+  .about__image-wrapper {
+    margin-top: 59px;
+  }
+  .about__image {
+    width: 300px;
+    height: 408px;
+    margin-left: 0px;
+    margin-top: -3px;
+  }
+  .pets__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    /*margin-top: 81px;
+            margin-left: -4px;*/
+    margin-top: 84px;
+    margin-left: 0px;
+    margin-bottom: 97px;
+  }
+  .help {
+    display: none;
+  }
+  .donation {
+    display: none;
+  }
+  .footer {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
