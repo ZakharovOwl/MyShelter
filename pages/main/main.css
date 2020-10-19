@@ -124,9 +124,7 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 18rem;
-  background: url(../../assets/images/start-screen-gradient-background.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  background-repeat: no-repeat;
-  background-size: 100vw;
+  background: url(/assets/images/shelter-adaptive/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   /* background-size: 100vh;*/
 }
 
@@ -1047,9 +1045,7 @@
     display: -ms-flexbox;
     display: flex;
     padding-top: 18rem;
-    background: url(/assets/images/start-screen-gradient-background768.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url(/assets/images/shelter-adaptive/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   }
   .hero__content {
     display: -webkit-box;
@@ -1318,6 +1314,156 @@
   }
   .footer-container {
     margin-top: 61px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .wrapper {
+    max-width: 320px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 18rem;
+    background: url(/assets/images/shelter-adaptive/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  }
+  .hero__image {
+    width: 260px;
+    height: 271.77px;
+    margin-left: 28px;
+    margin-top: 24px;
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo__title {
+    margin-left: -3px;
+  }
+  .content-section {
+    padding-bottom: 8rem;
+    max-width: 46.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-section__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 31rem;
+    color: #FFFFFF;
+    font-family: Georgia;
+    font-size: 4.4rem;
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    margin-right: 8px;
+  }
+  .content-section__subtitle {
+    margin: auto 6px;
+    margin-top: 4.2rem;
+  }
+  .content-section__subtitle-span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 13px;
+  }
+  .content-section__button {
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+  .about__title {
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 42px;
+    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__description {
+    width: 270px;
+    margin: auto 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: justify;
+  }
+  .about__description-p {
+    width: auto;
+    margin-bottom: -3px;
+    margin-top: 25px;
+  }
+  .about__image {
+    margin-left: 0px;
+    margin-top: -14px;
+    width: 260px;
+    height: 353.6px;
+  }
+  .pets {
+    display: none;
+  }
+  .help {
+    display: none;
+  }
+  .donation {
+    display: none;
+  }
+  .footer {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
