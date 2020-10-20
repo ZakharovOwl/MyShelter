@@ -426,6 +426,10 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     top: 19rem;
     @include slider_button();
 
+    &-button__none{
+        display: none;
+    }
+
     &_reverted{
         @include slider_button();
         position: absolute;
@@ -923,6 +927,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 
 .slider-button{
     position: static;
+
+
      
     &_reverted{
         position: static;
@@ -1070,7 +1076,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     .hero{
         display: flex;
         padding-top: 18rem;
-        background:url(/assets/images/shelter-adaptive/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    
         
         &__image{
            width: 260px;
@@ -1126,6 +1132,11 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     }
 }
     .about{
+        &__wrapper{
+            margin-bottom: 42px;
+        }
+
+
         &__title{
             font-size: 25px;
             line-height: 130%;
@@ -1167,8 +1178,45 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         }
     }
     .pets{
-        display:none;
+        &__wrapper{
+            margin-top: 45px;
+            margin-left: 0px;
+            margin-bottom: 41px;
         }
+
+        &__title{
+            font-size: 25px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            margin-bottom: 43px;
+        }
+
+        &__content{
+            margin: 0 31px;
+            flex-direction: column;
+        }
+
+        &-card__dog{
+            display: none;
+        }
+
+        &-block__button{
+            margin-top: -20px;
+        }
+    }
+    .slider-button{
+        &__none{
+            display: flex;
+            width: 270px;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        &__none320{
+            display: none;
+        }
+    }
     .help{
         display:none; 
     }
