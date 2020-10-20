@@ -1218,7 +1218,63 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         }
     }
     .help{
-        display:none; 
+        display:flex;
+        
+        &__wrapper{
+            margin: auto;
+            margin-top: 4.2rem;
+        }
+
+        &__title{
+            font-size: 25px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+        }
+
+        &-cards_grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 87px);
+            align-items: start;
+            justify-items: center;
+            grid-row-gap: 30px;
+            margin-top: 43px;
+            margin-left: 3px;
+        }
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &-card__content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        &-card__title{
+            @include h4();
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+        }
+
+        &-card__image{
+            height: 50px;
+            width: auto;
+        }
+
+        &-card__collars{
+            margin-bottom: 0px;
+        }
+
+        &-card__vitamins{
+            margin-bottom: 0px;
+        }
     }
     .donation{
         display:none;
