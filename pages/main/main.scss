@@ -10,9 +10,9 @@ $color-dark-3xl: #292929;
 $color-primary: #F1CDB3;
 $color-primary-light: #FDDCC4;
 
-$start-screen-gradient-background: url(/assets/images/shelter-adaptive/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+$start-screen-gradient-background: url(./../../assets/images/shelter-adaptive/transparent_noise.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 
-$footer-gradient-background: url(/assets/images/shelter-adaptive/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+$footer-gradient-background: url(./../../assets/images/shelter-adaptive/transparent_noise.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 
 $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 
@@ -610,9 +610,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 
 .footer{
     display: flex;
-    background: url(/assets/images/footer/footer-gradient-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    background-repeat: no-repeat;
-    background-size: 100vw;
+    background: url(./../../assets/images/shelter-adaptive/transparent_noise.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
 
     &__wrapper{
         display: flex;
@@ -812,7 +811,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     .hero{
         display: flex;
         padding-top: 18rem;
-        background: url(/assets/images/shelter-adaptive/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+        background: url(./../../assets/images/shelter-adaptive/transparent_noise.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 
         &__content{
             display: flex;
@@ -1011,7 +1010,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     }
 
     .footer{
-        background: url(/assets/images/footer/footer-gradient-background768.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+        background: url(./../../assets/images/shelter-adaptive/transparent_noise.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 
         &__wrapper{
             display: flex;
@@ -1076,6 +1075,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     .hero{
         display: flex;
         padding-top: 18rem;
+        background: url(./../../assets/images/shelter-adaptive/transparent_noise.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;;
     
         
         &__image{
@@ -1224,6 +1224,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         display:none;
     }
     .footer{
+        background: url(./../../assets/images/shelter-adaptive/transparent_noise.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
         display:none;
     }
 
