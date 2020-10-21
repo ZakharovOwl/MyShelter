@@ -1305,27 +1305,41 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         }
 
         &-content__bank{
-            font-size: 15px;
+            font-size: 13.4px;
             line-height: 160%;
+            margin-top: 22px;
+            text-align: justify;
+            margin-left: 0;
         }
 
         &-content__bank-account{
             width: 280px;
             height: 43px;
-            margin-top: 29px;
-            margin-left: 0px;
+            margin-top: 21px;
+            margin-left: -2px;
         } 
         &-content__bank-account h4{
             font-size: 15px;
             line-height: 110%;
             letter-spacing: 0.06em;
+            margin-bottom: 10px;
         } 
+
+        &-content__comment{
+            width: auto;
+            margin-right: 2px;
+            margin-left: 2px;
+            font-size: 12px;
+            line-height: 18px;
+            max-width: 280px;
+            text-align: justify;
+        }
 
         &-image-block{
             display: flex;
             width: 100%;
             max-height: 261px;
-            margin-top: 49px;
+            margin-top: 40px;
             margin-left: 0px;
             align-items: center;
             justify-content: center;
