@@ -488,7 +488,7 @@
   background-color: #FDDCC4;
 }
 
-.slider-button-button__none {
+.slider-button__none {
   display: none;
 }
 
@@ -1179,10 +1179,13 @@
   .pets__button {
     margin-top: 6.1rem;
   }
-  .pets .slider-button {
+  .slider-button {
     position: static;
   }
-  .pets .slider-button_reverted {
+  .slider-button__none {
+    display: none;
+  }
+  .slider-button_reverted {
     position: static;
   }
   .help {
@@ -1492,6 +1495,9 @@
   .pets-block__button {
     margin-top: -20px;
   }
+  .slider-button__none320 {
+    display: none;
+  }
   .slider-button__none {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1503,9 +1509,6 @@
         -ms-flex-align: center;
             align-items: center;
     margin-top: 20px;
-  }
-  .slider-button__none320 {
-    display: none;
   }
   .help {
     display: -webkit-box;

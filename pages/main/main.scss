@@ -426,7 +426,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     top: 19rem;
     @include slider_button();
 
-    &-button__none{
+    &__none{
         display: none;
     }
 
@@ -931,16 +931,18 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         &__button{
             margin-top: 6.1rem;
         }
-
+    }
 .slider-button{
     position: static;
 
-
+    &__none{
+        display: none;
+    }
      
     &_reverted{
         position: static;
     }
-    }
+
 }
 
     .help{
@@ -1212,19 +1214,19 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             margin-top: -20px;
         }
     }
-    .slider-button{
-        &__none{
-            display: flex;
-            width: 270px;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        &__none320{
-            display: none;
-        }
+.slider-button{
+    &__none320{
+        display: none;
     }
+
+    &__none{
+        display: flex;
+        width: 270px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    } 
+}
     .help{
         display:flex;
         
