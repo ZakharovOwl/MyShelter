@@ -1444,6 +1444,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         flex-direction: column;
         margin-right: 40px;
         margin-top: 19px;
+        z-index: 100;
         &-line{
             width: 30px;
             height: 0px;
@@ -1455,8 +1456,11 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             margin-bottom: 8px;
         }
     }
+    .burger-active{
+        transform: rotate(90deg);
+    }
 
-    .menu{
+    .menu-burger{
         display: flex;
     }
 
@@ -1478,9 +1482,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         }
 
         &__item-active{
-            margin-top: 52px;
+            margin-top: 24px;
         }
-
 
         &__item a{
             font-size: 32px;
@@ -1499,8 +1502,10 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             color: #FAFAFA;
         }
     }
-    .logo{
+    .logo-active{
         position: absolute;
+        top: 0px;
+        right: 125px;
         z-index: 200;
     }
 }

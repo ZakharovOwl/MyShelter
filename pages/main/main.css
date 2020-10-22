@@ -1752,6 +1752,7 @@
             flex-direction: column;
     margin-right: 40px;
     margin-top: 19px;
+    z-index: 100;
   }
   .burger-line {
     width: 30px;
@@ -1762,7 +1763,11 @@
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  .menu {
+  .burger-active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .menu-burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1790,7 +1795,7 @@
     margin-top: 39px;
   }
   .list__item-active {
-    margin-top: 52px;
+    margin-top: 24px;
   }
   .list__item a {
     font-size: 32px;
@@ -1806,8 +1811,10 @@
     border-bottom: 3px solid #F1CDB3;
     color: #FAFAFA;
   }
-  .logo {
+  .logo-active {
     position: absolute;
+    top: 0px;
+    right: 125px;
     z-index: 200;
   }
 }
