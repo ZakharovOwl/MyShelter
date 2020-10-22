@@ -1767,6 +1767,9 @@
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
+  body {
+    overflow-x: hidden;
+  }
   .menu-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1790,6 +1793,8 @@
         -ms-flex-align: center;
             align-items: center;
     z-index: 100;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   .list__item {
     margin-top: 39px;

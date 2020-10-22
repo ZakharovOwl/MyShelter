@@ -1456,10 +1456,14 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             margin-bottom: 8px;
         }
     }
+    
     .burger-active{
         transform: rotate(90deg);
     }
 
+    body{
+        overflow-x: hidden;
+    }
     .menu-burger{
         display: flex;
     }
@@ -1476,6 +1480,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         justify-content: center;
         align-items: center;
         z-index: 100;
+        transform: translateX(100%);
 
         &__item{
             margin-top: 39px;
