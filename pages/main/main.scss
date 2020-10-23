@@ -1483,10 +1483,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 100;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        transform: 0.3s ease-in;
+        transition: transform 0.5s ease-in;
 
         &__item{
             margin-top: 39px;
