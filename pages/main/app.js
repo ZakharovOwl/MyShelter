@@ -7,9 +7,9 @@ const navSlide = () => {
     const listLinks = document.querySelectorAll('.menu li')
 
     burger.addEventListener('click', () => {
+        menu.classList.toggle('menu-burger')
         list.classList.toggle('list-active')
         burger.classList.toggle('burger-active')
-        menu.classList.toggle('menu-burger')
         logo.classList.toggle('logo-active')
 
         //animation links
