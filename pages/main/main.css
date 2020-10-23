@@ -36,6 +36,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 44.3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .logo {
@@ -46,6 +48,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .logo__title {
@@ -1756,6 +1760,9 @@
     margin-right: 40px;
     margin-top: 19px;
     z-index: 100;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .burger-line {
     width: 30px;
@@ -1766,11 +1773,8 @@
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  .burger-active {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
   body {
+    min-width: 320px;
     overflow-x: hidden;
   }
   .menu-burger {
@@ -1798,9 +1802,16 @@
     z-index: 100;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    -webkit-transform: 0.3s ease-in;
+            transform: 0.3s ease-in;
   }
   .list__item {
     margin-top: 39px;
+    opacity: 0;
   }
   .list__item-active {
     margin-top: 24px;
@@ -1819,11 +1830,54 @@
     border-bottom: 3px solid #F1CDB3;
     color: #FAFAFA;
   }
-  .logo-active {
-    position: absolute;
-    top: 0px;
-    right: 125px;
-    z-index: 200;
+}
+
+.burger-active {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.logo-active {
+  position: absolute;
+  top: 0px;
+  right: 125px;
+  z-index: 200;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.list-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 /*# sourceMappingURL=main.css.map */
