@@ -48,6 +48,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -72,6 +73,10 @@
   font-weight: normal;
   line-height: 110%;
   letter-spacing: 0.13rem;
+}
+
+.logo-burger {
+  display: none;
 }
 
 .list {
@@ -1830,6 +1835,15 @@
   }
 }
 
+.logo-burger {
+  position: absolute;
+  top: 30px;
+  right: 125px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .burger-active {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -1838,12 +1852,17 @@
 }
 
 .logo-active {
-  position: absolute;
-  top: 0px;
-  right: 125px;
+  opacity: 0;
   z-index: 200;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.logo-burger-active {
+  opacity: 1;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .list-active {
