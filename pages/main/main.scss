@@ -185,11 +185,14 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 .menu{
     display: flex;
     width: 44.3rem;
+    transition: all 0.5s ease;
 }
 
 .logo{
     display: flex;
     flex-direction: column;
+    opacity: 1;
+    transition: all 0.5s ease;
 
     &__title{
         color:$color-primary;
@@ -202,6 +205,9 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         color: $color-light-xl;
         @include logo_subtitle()
     }
+}
+.logo-burger{
+    display: none;
 }
 
 .list{
@@ -1083,7 +1089,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     }
 
     .menu{
-        display: none;
+        display: flex;
     }
 
     .hero{
@@ -1103,6 +1109,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     .logo{
         display: flex;
         flex-direction: column;
+        position: absolute;
     
         &__title{
             margin-left: -3px;
@@ -1448,6 +1455,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         margin-right: 40px;
         margin-top: 19px;
         z-index: 100;
+        cursor: pointer;
+        transition: all 0.5s ease;
         &-line{
             width: 30px;
             height: 0px;
@@ -1459,12 +1468,9 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             margin-bottom: 8px;
         }
     }
-    
-    .burger-active{
-        transform: rotate(90deg);
-    }
 
     body{
+        min-width: 320px;
         overflow-x: hidden;
     }
     .menu-burger{
@@ -1482,11 +1488,12 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 100;
         transform: translateX(100%);
+        transition: all 0.5s ease-in;
 
         &__item{
             margin-top: 39px;
+            opacity: 0;
         }
 
         &__item-active{
@@ -1510,10 +1517,44 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             color: #FAFAFA;
         }
     }
-    .logo-active{
-        position: absolute;
-        top: 0px;
-        right: 125px;
-        z-index: 200;
+    
+}
+.logo-burger{
+    position: absolute;
+    top: 30px;
+    right: 125px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.burger-active{
+    transform: rotate(-90deg);
+    transition: all 0.5s ease;
+}
+
+.logo-active{
+    opacity: 0;
+    z-index: 200;
+    transition: all 0.5s ease;
+}
+
+.logo-burger-active{
+    opacity: 1;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.list-active{
+    transform: translateX(0%);
+    transition: all 0.5s ease;
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    } to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

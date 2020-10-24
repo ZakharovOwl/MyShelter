@@ -36,6 +36,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 44.3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .logo {
@@ -46,6 +48,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .logo__title {
@@ -68,6 +73,10 @@
   font-weight: normal;
   line-height: 110%;
   letter-spacing: 0.13rem;
+}
+
+.logo-burger {
+  display: none;
 }
 
 .list {
@@ -1344,7 +1353,9 @@
             justify-content: space-between;
   }
   .menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .hero {
     display: -webkit-box;
@@ -1367,6 +1378,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: absolute;
   }
   .logo__title {
     margin-left: -3px;
@@ -1756,6 +1768,9 @@
     margin-right: 40px;
     margin-top: 19px;
     z-index: 100;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .burger-line {
     width: 30px;
@@ -1766,11 +1781,8 @@
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  .burger-active {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
   body {
+    min-width: 320px;
     overflow-x: hidden;
   }
   .menu-burger {
@@ -1795,12 +1807,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 100;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
   }
   .list__item {
     margin-top: 39px;
+    opacity: 0;
   }
   .list__item-active {
     margin-top: 24px;
@@ -1819,11 +1833,68 @@
     border-bottom: 3px solid #F1CDB3;
     color: #FAFAFA;
   }
-  .logo-active {
-    position: absolute;
-    top: 0px;
-    right: 125px;
-    z-index: 200;
+}
+
+.logo-burger {
+  position: absolute;
+  top: 30px;
+  right: 125px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.burger-active {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.logo-active {
+  opacity: 0;
+  z-index: 200;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.logo-burger-active {
+  opacity: 1;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.list-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 /*# sourceMappingURL=main.css.map */
