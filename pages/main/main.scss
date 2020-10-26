@@ -343,7 +343,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         margin-bottom: 25px;
     }
 }
-
+/*
 .pets{
     display: flex;
     background: $color-light-l;
@@ -352,8 +352,6 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         display: flex;
         flex-direction: column;
         width: 100%;
-        /*margin-top: 81px;
-        margin-left: -4px;*/
         margin-top: 84px;
         margin-left: 0px;
         margin-bottom: 97px;
@@ -443,7 +441,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         top: 19rem;
     }
 }
-
+*/
 .help{
     display: flex;
     background-color: #FFFFFF;
@@ -719,87 +717,22 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
 .burger{
     display: none;
 }
-/*
-@media screen and (max-width: 1200px) {
-    .menu-wrapper{
-        display: flex;
-        margin: auto 5vw;
-        max-width: 120rem; 
-        flex: 0;
-        justify-content: space-between;
-    }
-
-    .about{
-        display: flex;
-    
-        &__wrapper{
-            display: flex;
-            margin: auto 0;
-            justify-content: center; 
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__title{
-            align-items: center;
-        }
-
-        &__description{
-            align-items: center;
-        }
-    }
-    .pets{
-        &-cards{
-            margin: auto 0;
-            justify-content: center; 
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__content{
-            align-items: center;
-        }
-    }
-
-    .donation{
-    
-        &__wrapper{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: auto 0;
-            margin-top: 7vh;
-            margin-bottom: 10.8vh;
-        }
-
-        &-content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        &__image{
-            width: 50vw;
-        }
-    
+@media screen and (max-width: 900px){
+    .menu-wrapper {
+        margin: auto 4%;
     }
 }
-*/
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1279px){
     .wrapper{
         max-width: 768px; 
         justify-content: space-between;
     }
-
+/*
     .menu-wrapper{
-        /*margin: auto 30px;*/
         margin: auto 4%;
-
     }
-
+*/
     .header{
         width: 100vw;
         max-width: 100%;
@@ -901,7 +834,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             margin-top: -3px;
         }
     }
-
+/*
     .pets{
         &__wrapper{
             margin-top: 84px;
@@ -952,9 +885,8 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     &_reverted{
         position: static;
     }
-
 }
-
+*/
     .help{
         display: flex;
 
@@ -1082,7 +1014,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     }
 }
 
-@media screen and (max-width: 715px){
+@media screen and (max-width: 767px){
     .wrapper{
         max-width: 320px; 
         justify-content: space-between;
@@ -1198,6 +1130,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
             height: 353.6px;
         }
     }
+    /*
     .pets{
         &__wrapper{
             margin-top: 45px;
@@ -1238,6 +1171,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
         margin-top: 20px;
     } 
 }
+*/
     .help{
         display:flex;
         
@@ -1530,6 +1464,7 @@ $card_hover: 0px 2px 35px 14px rgba(13,13,13,0.04);
     transform: rotate(-90deg);
     transition: all 0.5s ease;
 }
+
 
 .logo-active{
     opacity: 0;
