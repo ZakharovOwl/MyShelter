@@ -12,6 +12,7 @@ body.lock {
 }
 .our-friends-wrapper {
     background: #f6f6f6;
+    margin-top: 5px;
 }
 .our-friends {
     max-width: 1280px;
@@ -98,7 +99,7 @@ body.lock {
 .animal-single-card button {
     width: 187px;
     height: 52px;
-    margin-top: 30px;
+    margin-top: 28px;
     border: 2px solid #f1cdb3;
     background: inherit;
 }
@@ -115,7 +116,6 @@ body.lock {
     color: #545454;
 }
 .main-btn {
-    width: 207px;
     height: 52px;
     background: #f1cdb3;
     border-radius: 100px;
@@ -264,6 +264,14 @@ body.lock {
 }
 
 @media screen and (max-width: 1279px) {
+    .our-friends-wrapper {
+        margin-top: 0px;
+    }
+
+    .text-title-center{
+        margin-left: 2px;
+        margin-top: 2px;
+    }
     .modal {
         width: 630px;
         /* height: 350px; */
@@ -302,9 +310,6 @@ body.lock {
     .modal-close {
         left: 265px;
     }
-    .responsive-hidden {
-        display: none;
-    }
     .our-friends {
         max-width: 768px;
         height: 877px;
@@ -317,11 +322,14 @@ body.lock {
         width: 580px;
         margin: 60px 13px;
         align-items: center;
-        justify-content: center;
+    }
+    .responsive-hidden {
+        display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
+
     body.lock {
         overflow: hidden;
     }
@@ -355,7 +363,8 @@ body.lock {
         text-align: center;
         letter-spacing: 0.06em;
         width: 300px;
-        margin-left: 4px;
+        margin-left: 1px;
+        margin-top: 0px;
     }
 
     .slider-wrapper {
@@ -369,11 +378,11 @@ body.lock {
     }
     .slider-btn:nth-child(1) {
         top: 427px;
-        left: 43px;
+        left: 58px;
     }
     .slider-btn:nth-child(3) {
         top: 427px;
-        left: 175px;
+        left: 190px;
     }
 
     .slider-btn-resp-320 {
@@ -382,9 +391,6 @@ body.lock {
     .modal {
         width: 240px;
         /* height: 341px; */
-    }
-    .pet-image-modal {
-        display: none;
     }
     .pet-info {
         width: 240px;
@@ -404,5 +410,8 @@ body.lock {
     .animal-cards {
         width: 270px;
         margin: 43px 0;
+    }
+    .pet-image-modal {
+        display: none;
     }
 }

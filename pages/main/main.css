@@ -404,7 +404,7 @@
           flex-direction: column;
   width: 100%;
   margin-top: 8rem;
-  margin-left: -4px;
+  margin-left: 1px;
   margin-bottom: 9.5rem;
 }
 
@@ -440,7 +440,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 60px;
+  margin-left: -3px;
 }
 
 .help__line-one {
@@ -468,7 +469,7 @@
           justify-content: space-between;
   /*padding-top: 5vh;
         margin: auto 13vw;*/
-  padding-top: 5.9rem;
+  padding-top: 5.6rem;
   margin: auto 17rem;
 }
 
@@ -542,7 +543,7 @@
   /*margin-top: 13px;
         margin-left: -4px;*/
   max-height: 261px;
-  margin-top: 15px;
+  margin-top: 13px;
   /*margin-left: -16px;*/
   margin-left: 0px;
 }
@@ -556,7 +557,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  margin-left: 1rem;
+  margin-left: 4px;
 }
 
 .donation-content__title {
@@ -679,6 +680,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 4px;
+  margin-top: -1px;
 }
 
 .footer-questions__email {
@@ -1070,6 +1073,9 @@
   .donation-content__title {
     margin-top: 1px;
   }
+  .donation-content {
+    margin-left: 9px;
+  }
   .donation-content__comment {
     width: 100%;
     max-width: auto;
@@ -1130,7 +1136,7 @@
   }
   .footer__title-address {
     margin-top: 1.6rem;
-    margin-left: 3px;
+    margin-left: 0px;
   }
   .footer-address {
     width: auto;
@@ -1145,6 +1151,10 @@
   }
   .footer-container {
     margin-top: 61px;
+  }
+  .footer-questions {
+    margin-left: 1px;
+    margin-top: 0px;
   }
 }
 
