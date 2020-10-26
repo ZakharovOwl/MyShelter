@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    
+    <link rel="stylesheet" href="slider.css">
     <title>Shelter</title>
 </head>
 
@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link list__link_disabled" href="#">
+                        <a class="list__link list__link_disabled" href="../pets/index.html">
                             Our pets
                         </a>
                     </li>
@@ -77,7 +77,9 @@
                         </p>
                         <div class="content-section__button-cont">
                             <button type="button" class="content-section__button">
-                                <p>Make a friend</p>
+                                <a class="content-section__link" href="../pets/index.html">
+                                    Make a friend
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -118,78 +120,35 @@
                 </div>
             </div>
         </div>
-        <div class="pets">
-            <div class="wrapper">
-                <div class="pets__wrapper">
-                    <h3 class="pets__title">
-                        <span>Our friends who</span>
-                        <span>are looking for a house</span>
-                    </h3>
 
-                    <div class="pets__content">
-                        <button class="slider-button slider-button__none320">
-                            <img src="./../../assets/images/pets/Arrow.png" alt="left arrow">
+
+        <div class="our-friends-wrapper">
+            <section class="our-friends">
+                <div class="our-friends-container">
+                    <h2 class="text-title-center">
+                        Our friends who <br>
+                        are looking for a house
+                    </h2>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn slider-btn-prev">
+                            <img src="../../assets/icons/ArrowL.svg" alt="ArrowL">
                         </button>
-
-                        <div class="pets-cards">
-                            <div class="pets-card">
-                                <img src="./../../assets/images/pets/pets-katrine.png" alt="Katrine" class="pets-card__image">
-                                <div class="pets-card__content">
-                                    <h4 class="pets-card__title">
-                                        Katrine
-                                    </h4>
-                                    <button class="pets-card__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="pets-card pets-card__dog">
-                                <img src="./../../assets/images/pets/pets-jennifer.png" alt="Jennifer"
-                                    class="pets-card__image">
-                                <div class="pets-card__content">
-                                    <h4 class="pets-card__title">
-                                        Jennifer
-                                    </h4>
-                                    <button class="pets-card__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="pets-card pets-woody">
-                                <img src="./../../assets/images/pets/pets-woody.png" alt="Woody" class="pets-card__image">
-                                <div class="pets-card__content">
-                                    <h4 class="pets-card__title">
-                                        Woody
-                                    </h4>
-                                    <button class="pets-card__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="slider-button_reverted slider-button__none320">
-                            <img src="./../../assets/images/pets/Arrow2.png" alt="right arrow">
-                        </button>
-                        <div class="slider-button__none">
-                            <button class="slider-button">
-                                <img src="./../../assets/images/pets/Arrow.png" alt="left arrow">
-                            </button>
-                            <button class="slider-button_reverted">
-                                <img src="./../../assets/images/pets/Arrow2.png" alt="right arrow">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="pets-block__button">
-                        <button class="pets__button">
-                            Get to know the rest
+                        <div class="animal-cards"></div>
+                        <button class="slider-btn slider-btn-next">
+                            <img src="../../assets/icons/ArrowR.svg" alt="ArrowR">
                         </button>
                     </div>
-
+                    <button onclick="document.location='../pets/index.html'"
+                        class="main-btn our-friends-btn our-friends-btn320">
+                        Get to know the rest
+                    </button>
                 </div>
-            </div>
+            </section>
         </div>
+
+
+
+
         <div class="help">
             <div class="wrapper">
                 <div class="help__wrapper">
@@ -460,14 +419,14 @@
                                 <span>and suggestions</span>
                             </h3>
                             
-                            <div class="footer-questions__email">
+                            <a href="mailto:https://mail.gmail.com/" class="footer-questions__email">
                                 <img class="footer-questions__email-image" src="./../../assets/images/footer/mail.png" alt="mail" width="40px" height="26px">
                                 <h4 class="footer__text footer__text-phone">email@shelter.com</h4>
-                            </div>
-                            <div class="footer-questions__phone">
+                            </a>
+                            <a href="tel:+136745677554" class="footer-questions__phone">
                                 <img class="footer-questions__phone-image" src="./../../assets/images/footer/phone.png" alt="phone" width="40px" height="32px">
                                 <h4 class="footer__text footer__text-phone">+13 674 567 75 54</h4>
-                            </div>
+                            </a>
                         </div>
     
                         <div class="footer-address">
@@ -475,17 +434,19 @@
                                 <span>We are waiting</span>
                                 <span>for your visit</span>
                             </h3>
-                            <div class="footer-address__city">
+                            <a href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.3585519,-71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
+                            class="footer-address__city">
                                 <img class="footer-address__image" src="./../../assets/images/footer/pin.png" alt="pin" width="22px" height="32px">
                                 <h4 class="footer__text footer__text-city footer__text-c">
                                     <span>1 Central Street, Boston</span>
                                     <span>(entrance from the store)</span>
                                 </h4>
-                            </div>
-                            <div class="footer-address__street">
+                            </a>
+                            <a href="https://www.google.com/maps/search/18+South+Park,+London/@51.4314171,-0.1321769,13z/data=!3m1!4b1"
+                             class="footer-address__street">
                                 <img class="footer-address__image" src="./../../assets/images/footer/pin.png" alt="pin" width="22px" height="32px">
                                 <h4 class="footer__text footer__text-park">18 South Park, London </h4>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -498,6 +459,7 @@
         </footer>
     </main>
     <script src="app.js"></script>
+    <script src="slider.js"></script>
 </body>
 
 </html>
